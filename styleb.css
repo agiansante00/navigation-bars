@@ -1,0 +1,46 @@
+  .gallery { 
+  position: relative; 
+  } 
+  /* Smaller divs with 2 img tags each */ 
+  .gallery div { 
+  padding: 2px; 
+  width: 120px; 
+  } 
+
+  table.thumbs td { 
+  position: relative; 
+  padding: 0 2px; 
+  }
+
+  /* Small image in each cell */ 
+ table.thumbs img.small { 
+  width: 100px; 
+ }
+
+ /* Large images in left two columns */ 
+  table.thumbs img.left { 
+  position: fixed;
+      top: 300px;
+      left: 300px;
+      right: 300px;
+      bottom: 300px;
+  z-index: 10; 
+  visibility: hidden; 
+  } 
+  /* Large images in right two columns */ 
+  table.thumbs img.right { 
+  position: fixed;
+      top: 300px;
+      left: 300px;
+      right: 300px;
+      bottom: 300px;
+  z-index: 10; 
+  visibility: hidden; 
+  }
+
+  /* Hover on any table cell */ 
+ table.thumbs td:hover img.left,  
+ table.thumbs td:hover img.right { 
+  visibility: visible;
+   position: center;  
+  }

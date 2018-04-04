@@ -1,0 +1,14 @@
+ .faqs div p{ 
+  display: none; 
+ }
+.faqs div:first-letter,
+ .faqs div:hover p { 
+  display: block; 
+  cursor: help;
+  margin-left: 2em; 
+  background-color: #cef; 
+  margin-top: 0; 
+  font: bold 1.5em Arial Black, Gadget, sans-serif; 
+  color: red; 
+  text-shadow: 2px 2px #ccc; 
+ }

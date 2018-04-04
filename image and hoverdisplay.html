@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Captioned Picture</title>
+ <style type="text/css">
+ /* Applies to any div tag with class="captionpic" */
+ div.captionpic {
+ position: relative;
+ width: 50%;
+ margin: 1em auto;
+ border: solid 1px silver;
+ border-radius: 10px;
+ }
+ /* Image inside the captionpic div */
+ .captionpic img {
+ width: 100%;
+ display: block;
+ border-radius: 10px;
+ }
+/* Caption text inside captionpic */
+.captionpic div {
+ position: absolute;
+ top: 0;
+ right: 0;
+ width: 38%;
+ padding: 0 2%;
+ border-radius: 0 10px 10px 0;
+ height: 100%;
+ background: #ddd;
+ font: 10pt/14pt Arial, Helvetica, Sans-serif;
+ overflow: auto;
+transition: all linear 0.5s;
+ opacity: 0;
+ 
+ }
+ /* Caption text inside captionpic */
+ .captionpic:hover div {
+ opacity: 1;
+ transition: all linear 0.5s;
+
+ 
+ }
+ 
+ /* Caption text inside captionpic */
+/*
+.captionpic div {
+ position: absolute;
+ top: 0;
+ right: 0;
+ width: 38%;
+ padding: 0 2%;
+ border-radius: 0 10px 10px 0;
+ height: 100%;
+ background: #ddd;
+ font: 10pt/14pt Arial, Helvetica, Sans-serif;
+ overflow: auto;
+ opacity: .1;
+ -ms-transform: scale(0);
+ -moz-transform: scale(0);
+ -o-transform: scale(0);
+ -webkit-transform: scale(0);
+ transform: scale(0); 
+ }
+*/
+ /* Caption text inside captionpic */
+/*
+ .captionpic:hover div {
+ -ms-transition: all linear 1s;
+ -moz-transition: all linear 1s;
+ -o-transition: all linear 1s;
+ -webkit-transition: all linear 1s;
+ transition: all linear 1s;
+ opacity: .8;
+ -ms-transform: scale(1);
+ -moz-transform: scale(1);
+ -o-transform: scale(1);
+ -webkit-transform: scale(1);
+ transform: scale(1); 
+ }
+*/
+ 
+ 
+ 
+ </style>
+</head>
+<body>
+ <!-- Div contains an image and another div that contains caption text -->
+ <div class="captionpic">
+ <img src="pix2/raptor.png" alt="F-22 Raptor" />
+ <div>
+ <h2>F22-Raptor</h2>
+ <p>The Lockheed Martin/Boeing F-22 Raptor is a single-seat, twin-engine fifth-generation supermaneuverable fighter aircraft that uses stealth technology.</p> 
+ </div><!-- End caption text -->
+ </div><!-- End captionpic div -->
+</body>
+</html>
